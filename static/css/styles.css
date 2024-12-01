@@ -1,122 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html{
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
-}
+/* Global Styles */
 body {
-  background: linear-gradient(135deg, #000b18, #00172d, #00264d); /* Gradasi biru tua */
-  color: #333;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-#background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.container {
-  text-align: center;
-  max-width: 500px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.profile img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.profile h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-
-.about-me {
-  font-size: 0.8em;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.social-icons a img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.2s;
-}
-
-.social-icons a img:hover {
-  transform: scale(1.1);
-}
-
-/* Style untuk pop-up */
-.popup {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  z-index: 10;
-}
-
-.social-icons a {
-  position: relative;
-}
-
-
-/* Responsive Design */
-@media (max-width: 480px) {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffd1dc;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%; /* Responsif untuk layar kecil */
+  }
+  
+  /* Profile Section */
   .profile img {
     width: 100px;
     height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
   }
-
-  header h1 {
-    font-size: 2em;
-  }
-
+  
   .profile h2 {
-    font-size: 1.5em;
+    margin: 5px 0;
+    font-size: 22px;
   }
-
-  .about-me {
-    font-size: 0.9em;
+  
+  .profile p {
+    font-size: 16px;
+    color: #555;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
-
-  .social-icons a img {
-    width: 35px;
-    height: 35px;
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Responsif untuk tampilan mobile */
+    gap: 15px;
+    margin-top: 10px;
   }
-}
-
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .profile img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .profile h2 {
+      font-size: 20px;
+    }
+  
+    .profile p {
+      font-size: 14px;
+    }
+  
+    .social-icons img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .profile h2 {
+      font-size: 18px;
+    }
+  
+    .profile p {
+      font-size: 12px;
+    }
+  
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
