@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffd1dc;
+    background: linear-gradient(135deg, #000b18, #00172d, #00264d); /* Gradasi biru tua */
   }
   
   /* Container */
